@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function multi(n){
+        div = document.getElementById('count')
+        for (i = 1; i<=12; i++){
+            document.getElementById('count').innerHTML += n+" x "+i+" = "+(n*i)+"<br>"
+        }
+    }
+
+</script>
+<body>
+    2.โปรแกรม สูตรคูณ - multi.html<br>
+    <input type="text" onkeyup="multi(this.value);">
+    <table >
+    <div id = "count"></div>
+    </table>
+
+</body>
+</html>
