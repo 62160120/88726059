@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function Calculate(f,l,n){
+        div = document.getElementById("disp")
+        if(n=="+"){
+            div.innerHTML =(f+l)
+        }else if(n == "-"){
+            div.innerHTML =(f-l)
+        }else if(n == "*"){
+            div.innerHTML = (f*l)
+        }else if (n == "/"){
+            div.innerHTML =(f/l)
+        }
+    }
+
+</script>
+<body>
+    3. โปรแกรม เครื่องคิดเลข - cal.html<br>
+    <input type="text" id = "Fnum">
+    <select name="Cal" id="Cal">
+        <option value="+" id="+">+</option>
+        <option value="-" id="-">-</option>
+        <option value="*" id="*">*</option>
+        <option value="/" id="/">/</option>
+    </select>
+    <input type="text" id=Lnum>
+    <button onclick="Calculate(Fnum.value,Lnum.value,Cal.value)">=</button>
+    <div id="disp"></div>
+</body>
+</html>
