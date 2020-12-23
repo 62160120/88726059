@@ -8,20 +8,20 @@
 <script>
     rn = Math.floor(Math.random()*10);
 
-    function guess(){
-        num = document.getElementById('number').value
+    function guess(n){
+        n = document.getElementById('number').value
 
-        if(num == rn){
+        if(n == rn){
             document.getElementById("disp").innerHTML = "ถูกต้องนะครับ";
-            document.getElementById("hist").innerHTML += num+" ";
+            document.getElemntById("hist").innerHTML += n+" ";
         }
-        else if(num < rn){
+        else if(n < rn){
             document.getElementById("disp").innerHTML = "น้อยไปนะ";
-            document.getElementById("hist").innerHTML += num+" ";
+            document.getElementById("hist").innerHTML += n+" ";
         }
-        else if(num > rn){
+        else if(n > rn){
             document.getElementById("disp").innerHTML = "มากไปหน่อย";
-            document.getElementById("hist").innerHTML += num+" ";
+            document.getElementById("hist").innerHTML += n+" ";
         }
         
     }
@@ -29,16 +29,16 @@
         rn = Math.floor(Math.random()*10);
         div = document.getElementById('disp');
         div.innerHTML = " ";
-        j= document.getElementById('hist');
-        j.innerHTML = " ";
+        h = document.getElementById('hist');
+        h.innerHTML = " ";
     }
 
 </script>
 <body>
     <input type="number" id="number">
-    <button onclick="guess()">Guess</button>
+    <button onclick="guess(this.value);" id="number">Guess</button>
     <div id="disp"></div>
-    <j id = "hist"></j><br>
+    <h id = "hist"></h>
     <button onclick="startover()" >startover</button>
 </body>
 </html>

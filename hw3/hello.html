@@ -6,18 +6,17 @@
     <title>Document</title>
 </head>
 <script>
-    function startover(){
-        h = document.getElementById('hist');
-        h.innerHTML = "hist";
+    function repeat(n){
+        h = document.getElementById('rep');
+        h.innerHTML = "hello " + n;
     }
 
 </script>
 <body>
-    <tr>
-   <li> 1.โปรเเกรมทักทาย-hello.htlml</li>
-   <li><input type="text" id="text" onclick="startover"></li>
-    <h id="hist"></h>
-</tr>
+    1.โปรเเกรมทักทาย-hello.htlml<br>
+   <input type="text" onkeyup="text(this.value)"><br>
+    <h id="rep"></h>
+
 
 </body>
 </html>
