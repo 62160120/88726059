@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>First page</title>
+  <title>ADD song</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -45,3 +45,24 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
+
+<h1 style="text-align:left;float:left;">ADD new song</h1> 
+<a style="font-size:160%;">[</a>
+<a href="Firstpage.html" style="font-size:160%;"> ค้นหาเพลง </a> 
+ <a style="font-size:160%;">]</a><br>
+
+
+
+ 
+    <form class="form-inline" onsubmit="return search();" autocomplete="off"></form>
+    <input type="text" class="form-control" placeholder="ชื่อเพลง" id="search">
+    <button onclick="search();" class="btn btn-outline-success">ค้นหา</button>
+    
+  
+    <div id="disp"></div>
+  
+  
+
+
+</body>
+</html>
